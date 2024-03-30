@@ -6,7 +6,10 @@ const {
   updateUser,
   deleteUser,
 } = require("../../controllers/userController");
-const { addFriend, deleteFriend } = require('../../controllers/friendController');
+const {
+  addFriend,
+  deleteFriend,
+} = require("../../controllers/friendController");
 
 // /api/user
 router.route("/").get(getUsers).post(createUser);
