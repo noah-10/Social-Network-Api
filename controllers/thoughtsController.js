@@ -18,7 +18,7 @@ module.exports = {
       const thought = await Thought.findById(req.params.thoughtId);
 
       if (!thought) {
-        return res.json({ message: "No user found with this id" });
+        return res.json({ message: "No thought found with this id" });
       }
 
       res.json(thought);
